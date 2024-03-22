@@ -87,3 +87,5 @@ function validateSudoku(board) {
   }
   return true
 }
+
+// or
