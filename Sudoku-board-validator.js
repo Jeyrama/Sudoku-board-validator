@@ -41,9 +41,9 @@ Examples:
                        \3 4 5|2 8 6|1 7 9
 
 Details:
-    All inputs are guaranteed to be 2D boards of size 9x9 with possible values in range 0-9.
-    Rows, columns and blocks (3x3 small squares) must contain each number from range 1-9 exactly once.
-    User solution must not modify input boards.
+  All inputs are guaranteed to be 2D boards of size 9x9 with possible values in range 0-9.
+  Rows, columns and blocks (3x3 small squares) must contain each number from range 1-9 exactly once.
+  User solution must not modify input boards.
 */
 
 
@@ -57,7 +57,6 @@ function validateSudoku(board) {
     //number of columns 
     for(let j=0; j<board[0].length; j++) {
       let value = board[i][j]
-      
       //String - value of the element and the row number. eg: '5 row-1'
       let row = value + ' row-' + i 
       //vice-versa
